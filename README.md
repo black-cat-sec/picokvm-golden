@@ -11,6 +11,10 @@ runs the same image. Built and verified by a private pipeline; releases here are
 → *Save* → *Check for Updates* → *Update*. The KVM's own updater fetches `version.txt`, `update_system.zip` and the
 `.sha256` files relative to that URL and installs to its inactive A/B slot.
 
+## Releases
+Only the **Latest** release is for the fleet (that is what `releases/latest/download/` serves). Releases marked
+**Pre-release** are under test on the test unit and must not be installed anywhere else.
+
 ## What's in it
 Vendor Luckfox System 0.1.8 with: root-owned rootfs; telnet removed; SSH key-only (management public key) with the root
 password locked; once a Cloudflare tunnel token is set, the web UI is bound to localhost and the LAN ports are
